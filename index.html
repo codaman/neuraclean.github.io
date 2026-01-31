@@ -1,13 +1,191 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>App Support</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="NeuraClean app support, FAQs, contact, troubleshooting, privacy." />
+  <title>NeuraClean Support</title>
+  <link rel="icon" href="assets/app-icon.jpg" />
+  <link rel="apple-touch-icon" href="assets/app-icon.jpg" />
+  <link rel="stylesheet" href="assets/styles.css" />
 </head>
 <body>
-  <h1>App Support</h1>
-  <p>If you need help, contact us:</p>
-  <p>Email: support@yourapp.com</p>
-  <p>We usually respond within 24–48 hours.</p>
+  <div class="topbar">
+    <div class="container nav">
+      <a class="brand" href="/app-icon.jpg">
+        <img class="logoimg" src="assets/app-icon.jpg" alt="NeuraClean" width="38" height="38" loading="eager" decoding="async" />
+        <span>NeuraClean</span>
+      </a>
+      <div class="navlinks" aria-label="Site">
+        <a href="#contact">Contact</a>
+        <a href="#faq">FAQ</a>
+        <a href="#troubleshooting">Troubleshooting</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+      </div>
+    </div>
+  </div>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-card">
+        <div class="hero-inner">
+          <h1>Support</h1>
+          <p class="subtitle">
+            Need help with NeuraClean? You’re in the right place. Find answers, troubleshoot common issues,
+            or contact us for assistance.
+          </p>
+          <div class="badges" aria-label="Highlights">
+            <span class="badge"><span class="dot"></span> Fast responses</span>
+            <span class="badge"><span class="dot"></span> Privacy-first</span>
+            <span class="badge"><span class="dot"></span> iOS support</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="grid" id="contact">
+      <div class="card">
+        <h2>Contact support</h2>
+        <p>
+          Email is the fastest way to get help. Please include your device model, iOS version, app version,
+          and a short description of the issue.
+        </p>
+        <div class="btnrow">
+          <a class="btn primary" href="mailto:support@neuraclean.app?subject=NeuraClean%20Support">Email support</a>
+          <a class="btn" href="#troubleshooting">Try troubleshooting</a>
+        </div>
+        <hr class="sep" />
+        <p class="small">
+          If you don’t have an email client configured, copy this address:
+          <span class="code">support@neuraclean.app</span>
+          <br />
+          Replace it with your real support email if different.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>Helpful details</h2>
+        <div class="kv" role="list">
+          <div class="kv-row" role="listitem">
+            <div class="k">App</div>
+            <div class="v">NeuraClean</div>
+          </div>
+          <div class="kv-row" role="listitem">
+            <div class="k">Support email</div>
+            <div class="v"><a class="underline" href="mailto:support@neuraclean.app">support@neuraclean.app</a></div>
+          </div>
+          <div class="kv-row" role="listitem">
+            <div class="k">Data & privacy</div>
+            <div class="v"><a class="underline" href="privacy.html">Read privacy policy</a></div>
+          </div>
+          <div class="kv-row" role="listitem">
+            <div class="k">Terms</div>
+            <div class="v"><a class="underline" href="terms.html">Read terms</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="faq" style="padding-top:18px">
+      <div class="card">
+        <h2>FAQ</h2>
+        <div class="faq">
+          <details>
+            <summary>Why do you need Photos access?</summary>
+            <p>
+              NeuraClean needs access to analyze your library (duplicates, similar photos, blurry shots) and perform actions
+              you choose (delete, compress, export, etc.). Your photos stay on your device unless you explicitly export.
+            </p>
+          </details>
+          <details>
+            <summary>I granted Limited Photos access. Will the app work?</summary>
+            <p>
+              Limited access may restrict what NeuraClean can scan or manage. For the best experience, allow Full Access in
+              iOS Settings → Privacy & Security → Photos.
+            </p>
+          </details>
+          <details>
+            <summary>How do I report a bug?</summary>
+            <p>
+              Send an email to support with steps to reproduce, screenshots/screen recording if possible, and your device + iOS version.
+              If the issue involves photo processing, mention the feature (duplicates, blurry, video compression, USB sync, etc.).
+            </p>
+          </details>
+          <details>
+            <summary>Does NeuraClean upload my photos?</summary>
+            <p>
+              No. NeuraClean processes photos locally. If a feature requires network access (e.g. updates), it will not upload your personal photos.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="troubleshooting">
+      <div class="card">
+        <h2>Troubleshooting</h2>
+        <div class="callout">
+          <p><strong>Most issues are fixed by:</strong></p>
+          <ul>
+            <li>Force quitting the app and reopening</li>
+            <li>Ensuring Photos permission is granted</li>
+            <li>Restarting your iPhone</li>
+          </ul>
+        </div>
+        <hr class="sep" />
+        <div class="faq">
+          <details>
+            <summary>Photos are missing / scans find nothing</summary>
+            <p>
+              Check Photos permission: Settings → Privacy & Security → Photos → NeuraClean. If set to Limited, expand the selection or allow Full Access.
+            </p>
+          </details>
+          <details>
+            <summary>Delete or apply actions don’t work</summary>
+            <p>
+              iOS may block write operations without proper permission. Ensure Photos access is set to Full Access and try again.
+              If the issue persists, email support with what action you used.
+            </p>
+          </details>
+          <details>
+            <summary>USB Sync issues (drive not visible / folder picker fails)</summary>
+            <p>
+              Make sure your drive is properly connected (Lightning/USB‑C) and the Files app can browse it.
+              If the drive is encrypted or requires extra power, use a powered adapter.
+            </p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="data">
+      <div class="card">
+        <h2>Data requests</h2>
+        <p>
+          If you want to request data deletion or have privacy questions, email us with the subject
+          <span class="code">Privacy Request</span>.
+        </p>
+        <div class="btnrow">
+          <a class="btn primary" href="mailto:support@neuraclean.app?subject=Privacy%20Request">Privacy request</a>
+          <a class="btn" href="privacy.html">Privacy policy</a>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container" style="padding:0">
+        <div style="display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap">
+          <div>© <span id="year"></span> NeuraClean. All rights reserved.</div>
+          <div style="display:flex; gap:12px; flex-wrap:wrap">
+            <a href="privacy.html">Privacy</a>
+            <a href="terms.html">Terms</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script src="assets/app.js"></script>
 </body>
 </html>
